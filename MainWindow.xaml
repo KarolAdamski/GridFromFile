@@ -1,0 +1,27 @@
+﻿<Window x:Class="GridFromFile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GridFromFile"
+        mc:Ignorable="d"
+        Title="Manager" Height="357.5" Width="980" Icon="pobrane.ico">
+    <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto" Background="#FF175FAE" OpacityMask="#FFF4F6F9">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="265" Width="959" CellEditEnding="dataGrid_CellEditEnding" BorderBrush="#FF0736FC" OpacityMask="#FFEDD228" Foreground="#FF0B0101" Background="#FF175FAE" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Foreground="Black" Width="80" Header="Firs tName" Binding="{Binding FirstName, Mode=TwoWay}" IsReadOnly="false" />
+                <DataGridTextColumn Foreground="Black" Width="90" Header="Last Name"  Binding="{Binding LastName, Mode=TwoWay}" IsReadOnly="False"/>
+                <DataGridTextColumn Foreground="Black" Width="218" Header="Street Name"  Binding="{Binding StreetName, Mode=TwoWay}" IsReadOnly="False"/>
+                <DataGridTextColumn Foreground="Black" Width="90" Header="House Number   or Bag"  Binding="{Binding HouseNumber, Mode=TwoWay}" IsReadOnly="False"/>
+                <DataGridTextColumn Foreground="Black" Width="128" Header="Apartment Number" Binding="{Binding ApartmentNumber, Mode=TwoWay}" IsReadOnly="False"/>
+                <DataGridTextColumn Foreground="Black" Width="80" Header="Postal Code" Binding="{Binding PostalCode, Mode=TwoWay}" IsReadOnly="False"/>
+                <DataGridTextColumn Foreground="Black" Width="150" Header="Phone Number" Binding="{Binding PhoneNumber, Mode=TwoWay}" IsReadOnly="False" />
+                <DataGridTextColumn Foreground="Black" Width="80" Header="Day of Birth"  Binding="{Binding DayofBirth}" IsReadOnly="False"/>
+                <DataGridTextColumn Foreground="Black" Width="35" Header="Age"  Binding="{Binding Age, Mode=TwoWay}" IsReadOnly="True"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="button3" Content="Save" HorizontalAlignment="Left" Margin="402,298,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click" Background="#FF48E54A"/>
+        <Button x:Name="cancel_button" Content="Cancel" HorizontalAlignment="Left" Margin="555,298,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_Click" Background="#FFFA5D5D"/>
+    </Grid>
+</Window>

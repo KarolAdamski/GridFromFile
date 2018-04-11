@@ -1,0 +1,4 @@
+<?xml version="1.0" standalone="yes"?>
+<Customers>
+  <Customer FirstName="" LastName="" StreetName="" HouseNumber="" ApartmentNumber="" PostalCode="" PhoneNumber="" DayofBirth="" Age="" />
+</Customers>
